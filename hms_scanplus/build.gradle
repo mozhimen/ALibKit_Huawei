@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.mozhimen.libk.huawei.basic'
+    namespace 'com.mozhimen.libk.huawei.scan.plus'
     compileSdk 34
 
     defaultConfig {
@@ -12,7 +12,7 @@ android {
         multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-//        consumerProguardFiles "consumer-rules.pro"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -31,6 +31,8 @@ android {
 }
 
 dependencies {
+    //scank
+    api 'com.huawei.hms:scanplus:2.11.0.300'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'

@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-    implementation project(':SwiftKit:basick')
+    implementation project(':ASwiftKit:bindk')
 
     //test
     testImplementation 'junit:junit:4.13.2'
